@@ -24,10 +24,12 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    /*text-transform: uppercase;*/
+    font-family: 'Roboto Slab',palatino,serif;
+    font-size: 100px;
+    font-weight: 300;
+    letter-spacing: -.2px;
+    line-height: 38px;
 }
 
 p {
@@ -66,7 +68,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: rgba(0,0,0,0);
 }
 
 .navbar-custom .navbar-brand {
@@ -89,7 +91,8 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #4B4E5F;
+    background-color: rgba(255,255,255, 0.2)
 }
 
 .navbar-custom .nav li a {
@@ -133,6 +136,11 @@ a:focus {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
+    .navbar-custom a {
+    color: #4B4E5F;
+    background-color: rgba(255,255,255, 0.0);
+}
+
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
@@ -147,7 +155,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg-2.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg-3.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -166,6 +174,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    font-family: 'Roboto',arial,sans-serif;
 }
 
 @media(min-width:768px) {
@@ -179,7 +188,7 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 22px;
     }
 }
 
@@ -281,7 +290,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .download-section {
@@ -370,4 +379,50 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.navbar-toggle {
+    background: #448aff;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    line-height: 60px;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    margin: 0;
+    width: 50px;
+    border-radius: 0px;
+}
+.product {
+    font-family: 'Roboto',arial,sans-serif;
+    color: #848484;
+}
+.product-title {
+    font-size: 38px;
+    line-height: 48px;
+    margin: 0 0 25px;
+    color: #444;
+    font-family: 'Roboto Slab',palatino,serif;
+    font-weight: 300;
+}
+
+.section-image {
+
+}
+
+.product-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: url(../img/D7B black-front.jpg) no-repeat bottom center scroll;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
