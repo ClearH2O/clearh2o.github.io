@@ -411,8 +411,14 @@ body {
     font-weight: 300;
 }
 
-.section-image {
+.sect-img-container {
+    max-height: 700px;
+    overflow: hidden;
+    margin-top: -10%;
+}
 
+.section-image {
+    
 }
 
 .product-img {
@@ -426,3 +432,12 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+
+.gradient-box{
+    margin: auto;
+      border-bottom: 1px solid transparent;
+      -moz-border-image: -moz-linear-gradient(left, #FC913A 50%, #FF4E50 100%);
+      -webkit-border-image: -webkit-linear-gradient(left, #FC913A 50%, #FF4E50 100%);
+      border-image: linear-gradient(to right, #FC913A 50%, #FF4E50 100%);
+      border-image-slice: 1;
+    }

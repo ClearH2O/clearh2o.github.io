@@ -11,6 +11,11 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("gradient-box");
+    } else {
+        $(".navbar-fixed-top").removeClass("gradient-box");
+    }
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
