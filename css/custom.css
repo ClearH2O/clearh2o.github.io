@@ -417,9 +417,9 @@ body {
 
 .product-img {
     display: block;
-    width: 100%;
+    width: 500px;
     height: auto;
-    background: url(../img/D7B black-front.jpg) no-repeat bottom center scroll;
+    /*background: url(../img/D7B black-front.jpg) no-repeat bottom center scroll;*/
     background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
