@@ -68,7 +68,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(255,255,255,1);
 }
 
 .navbar-custom .navbar-brand {
@@ -92,7 +92,8 @@ a:focus {
 
 .navbar-custom a {
     color: #4B4E5F;
-    background-color: rgba(255,255,255, 0.2)
+    background-color: rgba(255,255,255, 0.2);
+    white-space: nowrap;
 }
 
 .navbar-custom .nav li a {
@@ -103,7 +104,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: #448aff;
     background-color: transparent;
 }
 
@@ -146,6 +147,12 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #fff;
     }
+
+    .navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,1);
+    background-color: transparent;
+}
 }
 
 .intro {
@@ -435,9 +442,19 @@ body {
 
 .gradient-box{
     margin: auto;
-      border-bottom: 1px solid transparent;
-      -moz-border-image: -moz-linear-gradient(left, #FC913A 50%, #FF4E50 100%);
-      -webkit-border-image: -webkit-linear-gradient(left, #FC913A 50%, #FF4E50 100%);
-      border-image: linear-gradient(to right, #FC913A 50%, #FF4E50 100%);
+      border-bottom: 3px solid transparent;
+      -moz-border-image: -moz-linear-gradient(left, #3a4ed5 10%, #3acfd5 100%);
+      -webkit-border-image: -webkit-linear-gradient(left, #3a4ed5 10%, #3acfd5 100%);
+      border-image: linear-gradient(to right, #3a4ed5 10%, #3acfd5 100%);
       border-image-slice: 1;
     }
+
+.section-text {
+    margin-bottom: 15%;
+}
+
+@media(min-width:767px) {
+    .section-text {
+    margin-bottom: 0%;
+}
+}
