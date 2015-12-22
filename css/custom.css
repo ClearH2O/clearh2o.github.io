@@ -481,9 +481,6 @@ body {
     margin-bottom: 15%;
 }
 
-.card-1, .card-2, .card-3 {
-    margin: 0px;
-}
 
 @media(min-width:767px) {
     .section-text {
@@ -493,16 +490,6 @@ body {
     .card-text {
         font-size: 16px;   
     }
-
-    .card-1 {
-        margin: 0px 0px 0px 0px;
-    }
-    .card-2 {
-        margin: 0px 0px 0px 0px;
-    }
-    .card-3 {
-        margin: 0px 0px 0px 0px;
-    }
 }
 
 @media(min-width:1200px) {
@@ -510,4 +497,6 @@ body {
         /*width:960px;*/
     }
 
+    .card-1 {
+    margin-left: 7%;
 }
