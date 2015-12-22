@@ -3,18 +3,14 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+$(".navbar-fixed-top").removeClass("gradient-box");
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
+    
     if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
     } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("gradient-box");
-    } else {
-        $(".navbar-fixed-top").removeClass("gradient-box");
+        $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
     }
 });
 

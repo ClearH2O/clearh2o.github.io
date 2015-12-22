@@ -41,7 +41,7 @@ p {
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
@@ -405,10 +405,24 @@ body {
     width: 50px;
     border-radius: 0px;
 }
-.product {
+.product, .card {
     font-family: 'Roboto',arial,sans-serif;
     color: #848484;
 }
+
+.card {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.card:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
 .product-title {
     font-size: 38px;
     line-height: 48px;
@@ -417,6 +431,20 @@ body {
     font-family: 'Roboto Slab',palatino,serif;
     font-weight: 300;
 }
+
+.card-text {
+    color:#fff;   
+}
+
+.card-title {
+    font-size: 24px;
+    line-height: 48px;
+    margin: 0 0 25px;
+    color: #fff;
+    font-family: 'Roboto Slab',palatino,serif;
+    font-weight: 300;
+}
+
 
 .sect-img-container {
     max-height: 700px;
@@ -453,8 +481,33 @@ body {
     margin-bottom: 15%;
 }
 
+.card-1, .card-2, .card-3 {
+    margin: 0px;
+}
+
 @media(min-width:767px) {
     .section-text {
-    margin-bottom: 0%;
+        margin-bottom: 0%;
+    }
+
+    .card-text {
+        font-size: 16px;   
+    }
+
+    .card-1 {
+        margin: 0px 0px 0px 0px;
+    }
+    .card-2 {
+        margin: 0px 0px 0px 0px;
+    }
+    .card-3 {
+        margin: 0px 0px 0px 0px;
+    }
 }
+
+@media(min-width:1200px) {
+    .card-container {
+        /*width:960px;*/
+    }
+
 }
