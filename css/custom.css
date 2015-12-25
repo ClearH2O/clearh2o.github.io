@@ -19,9 +19,6 @@ html {
 
 h1,
 h2,
-h3,
-h4,
-h5,
 h6 {
     margin: 0 0 35px;
     /*text-transform: uppercase;*/
@@ -423,13 +420,20 @@ body {
     transition: all .3s ease-in-out;
 }
 
-.product-title {
-    font-size: 38px;
+.heading- {
     line-height: 48px;
     margin: 0 0 25px;
-    color: #444;
     font-family: 'Roboto Slab',palatino,serif;
     font-weight: 300;
+}
+
+.product-heading {
+    font-size: 38px;
+    color: #444;
+}
+
+.testimonial-heading {
+    color:#fff;
 }
 
 .card-text {
@@ -499,8 +503,12 @@ body {
 
     .card-1 {
     margin-left: 7%;
+    }
 }
-
-.container-color {
-    padding:0;
+.container-highlight {
+    padding:70px 0px 70px 0px;
+    background: #448AFF none repeat scroll 0% 0%;
+}
+.btn-icon {
+    margin-right: 10px;
 }
