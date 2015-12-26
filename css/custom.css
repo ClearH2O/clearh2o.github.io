@@ -29,6 +29,13 @@ h6 {
     line-height: 38px;
 }
 
+hr {
+    background-color:#A1FFB9;
+    margin: 0px 0px 45px 0px;
+    width: 20%;
+    height: 2px;
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -502,7 +509,7 @@ body {
     }
 
     .card-1 {
-    margin-left: 7%;
+    margin-left: 5%;
     }
 }
 .container-highlight {
@@ -512,3 +519,30 @@ body {
 .btn-icon {
     margin-right: 10px;
 }
+
+.subcard {
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    padding: 15px 10px 50px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.btn-subcard {
+    padding: 5px 8px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    font-weight: 400px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    color: #848484;
+}
+.btn-subcard:hover {
+    color:#fff;
+}
+
+.subcard-text {
+    margin: 20px 0px 33px;
+    font-size: 15px;
+    line-height: 1.1;
+}
+
+.
