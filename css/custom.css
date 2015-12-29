@@ -285,8 +285,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
+    /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
+    background-color: #333;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -417,11 +417,28 @@ body {
 .card {
     padding-top: 20px;
     text-align: left;
+    min-height: 290px;
+    color: #fff;
 }
 
 .card:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.03);
     border-radius: 2px;
+    color:#FCFF80;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.card hr {
+    background-color:#FCFF80;
+    margin: 0px 0px 10px 0px;
+    width: 0%;
+    height: 2px;
+}
+
+.card:hover hr {
+    width: 10%;
     -webkit-transition: all .35s ease-in-out;
     -moz-transition: all .35s ease-in-out;
     transition: all .3s ease-in-out;
@@ -445,14 +462,13 @@ body {
 }
 
 .card-text {
-    color:#fff;   
+    
 }
 
 .card-title {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 48px;
     margin: 0 0 25px;
-    color: #fff;
     font-family: 'Roboto Slab',palatino,serif;
     font-weight: 300;
 }
@@ -461,7 +477,7 @@ body {
 .sect-img-container {
     max-height: 700px;
     overflow: hidden;
-    margin-top: 0;
+    margin-top: -100px;
 }
 
 .product-img {
@@ -485,7 +501,7 @@ body {
       border-image-slice: 1;
     }
 .testimonial-text {
-    margin: 0px 0px 20px;
+    margin-bottom: 20px;
 }
 
 @media(max-width:767px) {
@@ -525,6 +541,9 @@ body {
     }
     .sect-img-container {
         margin-top: -10%;
+    }
+    .subcard-text-sm {
+        font-size: 13px;
     }
 }
 
@@ -590,7 +609,13 @@ body {
     line-height: 1.1;
 }
 .subcard-text-sm {
-    font-size: 12px;
     margin: 45px 0px 20px;
     text-align: right;
+}
+
+.text-bold {
+    color: #A1FFB9;
+    border: 1px solid #A1FFB9;
+    padding: 3px;
+    border-radius: 4px;
 }
