@@ -19,6 +19,7 @@ fs.readFile('./default.htm', function (err, html) {
 var express = require('express');
 var app = express();
 //var path = require('path');
+/*var module = require('BOWER');*/
 
 app.use('/', express.static(__dirname + '/'));
 //app.use('/public/js', express.static(__dirname + '/public/js'));
@@ -31,14 +32,15 @@ app.get('/', function(req, res){
       res.status(err.status).end();
     }
     else {
-      console.log('Resposne file sent');
+      console.log('Response file sent');
+      console.log('file sent through localhost');
     }
   });
   //res.end();
 });
 
-app.listen('8080',function(){
-	console.log("Running at localhost:3000");
+app.listen('3030',function(){
+	console.log("Running at localhost:3030");
 });
 
 

@@ -5,38 +5,34 @@
  */
 $(".navbar-fixed-top").removeClass("gradient-box");
 // jQuery to collapse the navbar on scroll
-var animateDone = false;
+var animateDone_sect1 = false;
+var animateDone_sect2 = false;
 
 $(window).scroll(function() {
 
     var y_scroll_pos = window.pageYOffset;
     var scrollPos_sect1 = 250;
     var scrollPos_sect2 = 1350;
-    var pre_scrol_post = 1;
+    var pre_scrol_post = 50;
 
-    if ($(".navbar").offset().top > 90) {
+    if ($(".navbar").offset().top > 100) {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
     }
 
-//slide-in code// TODO: CONVERT TO WHILE+SWITCH ----------------------------------------
-    if (y_scroll_pos > pre_scrol_post && animateDone == false) {
-        $(".img-trans-out").animate({marginLeft:'150px'},140);
-        $("#img-trans-in-1").addClass("animatedd");
-        $("#img-trans-in-2").addClass("animatedd");
-        animateDone = true;
+    if (y_scroll_pos > pre_scrol_post && animateDone_sect1 == false) {
+        $(".img-trans-out").animate({marginLeft:'150px'},40);
     }
 
-    if (y_scroll_pos > scrollPos_sect1 ) {
-        $("#img-trans-in-1.img-trans-out.animatedd").animate({marginLeft:'0px'},750);
-        $("#img-trans-in-1").removeClass("animatedd");
+    if (y_scroll_pos > scrollPos_sect1 && animateDone_sect1 == false) {
+        $("#img-trans-in-1").animate({marginLeft:'0px'},750);
+        animateDone_sect1 = true;
     }
-
-    if (y_scroll_pos > scrollPos_sect2 ) {
-        $("#img-trans-in-2.img-trans-out.animatedd").animate({marginLeft:'0px'},750);
-        $("#img-trans-in-2").removeClass("animatedd");
-    }   
+    if (y_scroll_pos > scrollPos_sect2 && animateDone_sect2 == false) {
+        $("#img-trans-in-2").animate({marginLeft:'0px'},750);
+        animateDone_sect2 = true;
+    }
     else {
 
     }

@@ -21,6 +21,7 @@ $(window).scroll(function() {
     }
 
 //slide-in code// TODO: CONVERT TO WHILE+SWITCH ----------------------------------------
+//DOM Triggered with page-scroll event -------------------------------------------------
     if (y_scroll_pos > pre_scrol_post && animateDone == false) {
         $(".img-trans-out").animate({marginLeft:'150px'},140);
         $("#img-trans-in-1").addClass("animatedd");
