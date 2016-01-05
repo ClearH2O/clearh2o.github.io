@@ -636,5 +636,5 @@ body {
 .client-icon {
     margin-right: 40px;
     color: #4E4E4E;
-    line-height: 1.5;
+    line-height: 1.5!important;
 }
