@@ -4,9 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 $(".navbar-fixed-top").removeClass("gradient-box");
+$(document).ready(function() {
+    
+    if ($(".navbar").offset().top > 90) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
+    }
+});
 // jQuery to collapse the navbar on scroll
 var animateDone = false;
-
 $(window).scroll(function() {
 
     var y_scroll_pos = window.pageYOffset;
