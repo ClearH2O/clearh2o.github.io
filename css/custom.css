@@ -18,7 +18,6 @@ html {
 }
 
 h1,
-h2,
 h6 {
     margin: 0 0 35px;
     /*text-transform: uppercase;*/
@@ -28,6 +27,7 @@ h6 {
     letter-spacing: -.2px;
     line-height: 38px;
 }
+h2,
 h3,
 h4 {
     font-family: 'Roboto Slab',palatino,serif;
@@ -631,4 +631,9 @@ body {
 
 .test-class {
     margin-left: 0px;
+}
+
+.client-icon {
+    margin-right: 40px;
+    color: #4E4E4E;
 }
