@@ -17,6 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/colorbox.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
@@ -31,6 +32,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/colorbox.js"></script>
 
 </head>
 
@@ -67,6 +71,44 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+
+                    <li class = "dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Login
+                            <span class = "caret"></span></a>
+                            <ul id="login-dp" class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3 class="login-title">Customer Login</h3>
+                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class = "sr-only" for="inputEmail2">Email address</label>
+                                                    <input type = "email" class="form-control" id = "inputEmail2" placeholder="Email address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class = "sr-only" for="inputpass2">Password</label>
+                                                    <input type ="password" class="form-control" id="inputpass2" placeholder="Password" required>
+                                                    <div class="help-block text-right"><a href="">Forgot password ?</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class ="btn btn-primary btn-block">Sign in</button>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"></input>
+                                                        <p style="font-size:12px;margin:0;">keep me logged-in</p>
+                                                    </label>
+                                                </div>
+                                                
+                                            </form>
+                                        </div>
+                                        <div class="bottom text-center">
+                                            New here ? <a href="#" class="join-us"><b>Be a customer!</b></a>
+                                        </div>
+                                    </div>
+                                </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -97,9 +139,12 @@
             <div class="col-sm-6 col-md-6 col-lg-offset-1 text-left section-text">
                 <h2 class="heading- product-heading">The Clear Choice in Office Water Coolers</h2>
                 <p>ClearH2O Coolers is based in Louisville, CO.  Since 2005 we have been leasing bottleless (filtered) water coolers to businesses  throughout the Boulder, Denver, Colorado Springs and Fort Collins area. We are dedicated to providing our customers with exceptional purified drinking water without the nuisance and inconvenience of heavy, space consuming bottles. </p>
+                <div class="row">
+                    <p><a class="group3" href="../img/fa-anchor.png" title=" "><img src="/img/fa-anchor.png" width:100; /></a><a class="group3" href="../img/fa-anchor.png" title=" "><img src="/img/fa-anchor.png" width:100; /></a><a class="group3" href="../img/fa-anchor.png" title=" "><img src="/img/fa-anchor.png" width:100; /></a></p>
+                </div>
             </div>
             <div class="col-sm-6 col-md-4 col-md-offset-1 col-xs-offset-0 sect-img-container section-image">
-               <img src="../img/CleanH2O.jpg" id="img-trans-in-1" class="img-trans-out" style="height:auto; width:350px" />
+               <img src="../img/D14A-B_Angle.png" id="img-trans-in-1" class="img-trans-out" style="height:auto; width:350px" />
             </div>
         </div>
     </section>
@@ -210,7 +255,7 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Our proud ClearH2O users</h2>
-                    <p style="margin-top:40px;" class="text-center"><i class="fa fa-5x fa-empire client-icon">  </i><i class="fa fa-5x fa-plane client-icon">  </i><i class="fa fa-5x fa-fighter-jet client-icon">  </i><i class="fa fa-5x fa-rebel client-icon">  </i><i class="fa fa-5x fa-rocket client-icon">  </i><i class="fa fa-5x fa-space-shuttle client-icon">  </i><i class="fa fa-5x fa-reddit-alien client-icon">  </i><i class="fa fa-5x fa-shopping-basket client-icon">  </i><i class="fa fa-5x fa-anchor client-icon">  </i><i class="fa fa-5x fa-bug client-icon">  </i></p>
+                    <p style="margin-top:40px;" class="text-center"><i class="fa fa-5x fa-empire client-icon">  </i><i class="fa fa-5x fa-fort-awesome client-icon">  </i><i class="fa fa-5x fa-fighter-jet client-icon">  </i><i class="fa fa-5x fa-rebel client-icon">  </i><i class="fa fa-5x fa-rocket client-icon">  </i><i class="fa fa-5x fa-space-shuttle client-icon">  </i><i class="fa fa-5x fa-reddit-alien client-icon">  </i><i class="fa fa-5x fa-shopping-basket client-icon">  </i><i class="fa fa-5x fa-anchor client-icon">  </i><i class="fa fa-5x fa-bug client-icon">  </i></p>
                     <a href="#" class="subcard-text-sm">Read the testimonials here</a>
                     <p> </p>
                     <a href="#" class="btn btn-default btn-lg">Read the testimonials here</a>
@@ -241,7 +286,6 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

@@ -638,3 +638,83 @@ body {
     color: #4E4E4E;
     line-height: 1.5!important;
 }
+
+#login-dp{
+            min-width: 280px;
+            padding: 14px 14px 0;
+            overflow: hidden;
+            background-color:rgba(255,255,255,.8);
+        }
+        #login-dp .help-block{
+            font-size: 10px;
+            text-decoration: none;
+        }
+        #login-dp .bottom{
+            background-color:#000000;
+            border-top: 1px solid #ddd;
+            clear: both;
+            padding: 14px;
+        }
+        
+        #login-dp .social-buttons{
+            margin: 12px 0;
+        }
+        
+        #login-dp .social-buttons a{
+            width: 49%;
+        
+        }
+        
+        #login-dp .form-group {
+            margin-bottom: 10px;
+        }
+
+        #login-dp .login-title {
+            /*font-family: 'Roboto Slab',palatino,serif;*/
+            color: #555;
+            margin: 10px 0px 20px 10px;
+        }
+        #login-dp .join-us {
+            color: #7186FF;
+        }
+        #login-dp .checkbox label {
+            color:#333!important;
+            font-size: 10px;
+            margin: 4px 0px 0px;
+        }
+        
+        .btn-fb{
+            color: #fff;
+            background-color: #3b5998;
+            
+        }
+        
+        .btn-fb:hover{
+            color: #fff;
+            background-color:#496ebc;
+        }
+        
+        .btn-tw{
+            color: #fff;
+            background-color:#55acee;
+            
+        }
+        .btn-tw:hover{
+            color: #fff;
+            background-color: #59b5fa;
+        }
+        
+        @media(max-width:768){
+            #login-dp{
+                background-color: inherit;
+                color: #fff;
+            }
+            
+            #login-dp .bottom{
+                background-color: inherit;
+                border-top:0 none;
+            }
+        
+        }
+        
+        
