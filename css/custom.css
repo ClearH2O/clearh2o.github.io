@@ -716,5 +716,20 @@ body {
             }
         
         }
-        
-        
+
+.prod-thumbnail {
+    margin-right: 2px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    -webkit-transition: all .1s ease;  /* Transition for Webkit browsers */
+}
+.prod-thumbnail:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
+
+.icap {
+    border:2px solid #333;
+}
