@@ -320,7 +320,7 @@ a:focus {
 }
 
 .btn {
-    border-radius: 0;
+    border-radius: 4px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -755,4 +755,11 @@ body {
 
 .intro-col h4{
     margin-bottom: 0;
+}
+
+.logo-collapse {
+    filter: grayscale(100%), brightness(30%);
+    -webkit-filter: grayscale(100%), brightness(30%);  /* For Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    -webkit-transition: all .1s ease;   
 }
