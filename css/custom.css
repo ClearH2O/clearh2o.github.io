@@ -638,6 +638,14 @@ body {
     margin-right: 40px;
     color: #4E4E4E;
     line-height: 1.5!important;
+    max-width: 328px;
+}
+
+@media(max-width:649px) {
+    .client-icon {
+        width: auto;
+        height: 100px;
+    }
 }
 
 #login-dp{
