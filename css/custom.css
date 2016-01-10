@@ -441,6 +441,14 @@ body {
     height: 2px;
 }
 
+#contact hr {
+    background-color: #333;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7%;
+    height: 3px;
+}
+
 .card:hover hr {
     width: 10%;
     -webkit-transition: all .35s ease-in-out;
