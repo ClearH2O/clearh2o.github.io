@@ -519,7 +519,7 @@ body {
     .section-image {
         margin-left: auto;
         margin-right: auto;
-        width: 350px;
+        height: 350px;
     }
     .section-text {
         margin-bottom: 7%;
@@ -641,8 +641,18 @@ body {
     max-width: 328px;
 }
 
+.img-mobile {
+        height:auto; 
+        width:350px;
+    }
+
 @media(max-width:649px) {
     .client-icon {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img-mobile {
         max-width: 100%;
         height: auto;
     }
