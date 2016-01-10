@@ -638,6 +638,12 @@ body {
     border-radius: 4px;
 }
 
+.text-bold-white {
+    color: #fff;
+    border: 2px solid #FFF;
+    padding: 3px 8px;
+}
+
 .test-class {
     margin-left: 0px;
 }
@@ -792,4 +798,13 @@ body {
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
+}
+
+.promo-bg {
+    background: 
+    linear-gradient(
+      rgba(68, 138, 255, 0.95), 
+      rgba(68, 138, 255, 0.45)
+    ),
+    url(/img/bottles.jpeg);
 }
