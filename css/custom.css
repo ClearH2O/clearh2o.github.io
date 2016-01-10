@@ -758,8 +758,12 @@ body {
 }
 
 .logo-collapse {
-    filter: grayscale(100%), brightness(30%);
-    -webkit-filter: grayscale(100%), brightness(30%);  /* For Webkit browsers */
-    filter: gray;  /* For IE 6 - 9 */
-    -webkit-transition: all .1s ease;   
+    filter: grayscale(100%) brightness(50%); 
+    -webkit-filter: grayscale(100%) brightness(50%);
+    /* For Webkit browsers */
+    filter: gray;
+     /* For IE 6 - 9 */
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
 }
