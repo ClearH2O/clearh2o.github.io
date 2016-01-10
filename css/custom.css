@@ -131,7 +131,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    color: #337AB7;
 }
 
 @media(min-width:768px) {
@@ -146,7 +146,7 @@ a:focus {
     }
 
     .navbar-custom a {
-    color: #4B4E5F;
+    
     background-color: rgba(255,255,255, 0.0);
 }
 
@@ -158,7 +158,7 @@ a:focus {
 
     .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,1);
+    color: #337AB7;
     background-color: transparent;
 }
 }
@@ -283,6 +283,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+    font-family: 'Roboto',arial,sans-serif;
 }
 
 .download-section {
@@ -414,7 +415,6 @@ body {
     border-radius: 0px;
 }
 .product, .card {
-    font-family: 'Roboto',arial,sans-serif;
     color: #848484;
 }
 
@@ -463,6 +463,7 @@ body {
 .testimonial-heading {
     color:#fff;
     margin-top: 35px;
+    margin-bottom: 30px;
 }
 
 .card-text {
@@ -732,4 +733,25 @@ body {
 
 .icap {
     border:2px solid #333;
+}
+
+.prod-thumb-container {
+    margin-left: 20px;
+}
+
+.navbar-custom .init-color a{
+    color: #fff!important;
+}
+
+.navbar-custom .init-color li:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.intro-col {
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.intro-col h4{
+    margin-bottom: 0;
 }

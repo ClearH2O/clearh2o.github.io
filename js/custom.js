@@ -8,8 +8,10 @@ $(document).ready(function() {
     
     if ($(".navbar").offset().top > 90) {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
+        $(".navbar-nav").removeClass("init-color");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
+        $(".navbar-nav").addClass("init-color");
     }
 });
 // jQuery to collapse the navbar on scroll
@@ -18,13 +20,15 @@ $(window).scroll(function() {
 
     var y_scroll_pos = window.pageYOffset;
     var scrollPos_sect1 = 250;
-    var scrollPos_sect2 = 1350;
+    var scrollPos_sect2 = 1650;
     var pre_scrol_post = 1;
 
     if ($(".navbar").offset().top > 90) {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
+        $(".navbar-nav").removeClass("init-color");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
+        $(".navbar-nav").addClass("init-color");
     }
 
 //slide-in code// TODO: CONVERT TO WHILE+SWITCH ----------------------------------------
