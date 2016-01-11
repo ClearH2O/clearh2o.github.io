@@ -776,13 +776,23 @@ body {
 }
 
 .navbar-custom .init-color a{
-    color: #fff!important;
+    color: #333;
 }
 
 .navbar-custom .init-color li:hover {
     border-bottom: 2px solid #fff;
 }
 
+
+@media(min-width:768px){
+    .navbar-custom .init-color a{
+        color: #fff!important;
+    }
+
+    .navbar-custom .init-color li:hover {
+        border-bottom: 2px solid #fff;
+    }
+}
 .intro-col {
     padding-right: 18px;
     padding-left: 18px;
