@@ -46,11 +46,25 @@ p {
     font-weight: 300;
 }
 
+.footer-col {
+    margin-top: 0px;
+    padding: 15px 30px;
+}
+
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
         font-size: 18px;
         line-height: 1.6;
+    }
+
+    .footer-address {
+        margin-left: 20px;
+    }
+
+    .footer-col {
+        margin-top: 0;
+        padding: 15px 15px;
     }
 }
 
@@ -822,3 +836,13 @@ body {
     ),
     url(/img/bottles.jpeg);
 }
+
+.footer-contact {
+    font-size:12px;
+    letter-spacing:1.15px;
+}
+
+.icon-align {
+    vertical-align: middle;
+}
+
