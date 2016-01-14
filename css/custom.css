@@ -59,7 +59,7 @@ p {
     }
 
     .footer-address {
-        margin-left: 20px;
+        margin-left: 40px;
     }
 
     .footer-col {
@@ -845,4 +845,11 @@ body {
 .icon-align {
     vertical-align: middle;
 }
-
+.header-button {
+    color:#fff;
+    border-color:#fff;
+}
+.header-button:hover {
+    background-color: #fff;
+    text-shadow: none;
+}
