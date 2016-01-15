@@ -3,8 +3,9 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-$(".navbar-fixed-top").removeClass("gradient-box");
+
 $(document).ready(function() {
+    
     
     if ($(".navbar").offset().top > 90) {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
@@ -85,7 +86,8 @@ $(window).scroll(function() {
        animateStatus = true;
     }
     else {
-        
+        switch(1);
+        switch(2)
     }
 });*/
 $(window).scroll(function() {

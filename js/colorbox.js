@@ -24,4 +24,6 @@ $(document).ready(function(){
 		$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
 		return false;
 	});
+
+	//TODO: switch control for different colorbox unit for different colorbox features.
 });
