@@ -5,7 +5,7 @@
  */
 
 $(document).ready(function() {
-    
+
     
     if ($(".navbar").offset().top > 90) {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
@@ -14,6 +14,7 @@ $(document).ready(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
         $(".navbar-nav").addClass("init-color");
+        $(".navbar-nav.service-menu-white").removeClass("init-color");
         $(".navbar-header img").addClass("logo-collapse");
     }
 });
@@ -33,11 +34,13 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
         $(".navbar-nav").addClass("init-color");
+        $(".navbar-nav.service-menu-white").removeClass("init-color");
         $(".navbar-header img").addClass("logo-collapse");
     }
 
 //slide-in code// TODO: CONVERT TO WHILE+SWITCH ----------------------------------------
 //DOM Triggered with page-scroll event -------------------------------------------------
+
     if (y_scroll_pos > pre_scrol_post && animateDone == false) {
         $(".img-trans-out").animate({marginLeft:'150px'},140);
         $("#img-trans-in-1").addClass("animatedd");
@@ -100,6 +103,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 // Google Maps Scripts
 // When the window has finished loading create our google map below
+//google maps initiated after site is loaded. TODO: alternative ways to trigger GOOGLE MAPS API USING DOCUMENTED JS GOOGLE MAPS API 
 google.maps.event.addDomListener(window, 'load', init);
 
 function init() {

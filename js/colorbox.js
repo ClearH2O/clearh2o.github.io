@@ -26,4 +26,5 @@ $(document).ready(function(){
 	});
 
 	//TODO: switch control for different colorbox unit for different colorbox features.
+	//ANOTHER todo list: actually there isnt anything else to do since i'm just pretending that I am writing something
 });

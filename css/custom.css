@@ -193,8 +193,8 @@ a:focus {
 }
 
 .service-intro {
-    margin-top: 70px;
-    background: url(../img/water.jpg) no-repeat bottom center scroll;
+    /*height: 70%;*/
+    background: url(../img/water.jpg) no-repeat top center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -205,6 +205,12 @@ a:focus {
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+}
+
+.intro-texts {
+    text-shadow:1px 1px #666;
+    margin-top:0px;
+    line-height: 1.6;
 }
 
 .intro .intro-body .brand-heading {
@@ -220,6 +226,12 @@ a:focus {
     .intro {
         height: 100%;
         padding: 0;
+    }
+
+    .service-intro {
+        height: 70%;
+        padding: 0;
+        margin-top: 80px;
     }
 
     .intro .intro-body .brand-heading {
@@ -810,8 +822,9 @@ body {
 
 @media(min-width:768px){
     .navbar-custom .init-color a{
-        color: #fff!important;
+        color: #fff;
     }
+
 
     .navbar-custom .init-color li:hover {
         border-bottom: 2px solid #fff;
