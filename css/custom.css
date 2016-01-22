@@ -194,7 +194,7 @@ a:focus {
     font-family: 'Roboto',palatino,sans-serif;
 }
 .logo-large {
-        margin-top:0px;
+        margin-top:-2px;
         font-size:18px;
 }
 .logo-large img{
