@@ -184,7 +184,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/bg-img-5.jpg) no-repeat center center scroll;
+    background: url(../img/intro-bg-3.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -208,7 +208,7 @@ a:focus {
 }
 
 .intro-texts {
-    text-shadow:1px 1px #666;
+    text-shadow:1px 1px rgba(0,0,0, 0.58);
     margin-top:0px;
     line-height: 1.6;
 }
@@ -219,7 +219,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-    font-family: 'Roboto',arial,sans-serif;
+    font-family: 'Roboto',palatino,sans-serif;
 }
 
 @media(min-width:768px) {

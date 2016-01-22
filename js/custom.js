@@ -10,12 +10,12 @@ $(document).ready(function() {
     if ($(".navbar").offset().top > 90) {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
         $(".navbar-nav").removeClass("init-color");
-        //$(".navbar-header img").removeClass("logo-collapse");
+        $(".navbar-header img").removeClass("logo-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
         //$(".navbar-nav").addClass("init-color");
         $(".navbar-nav.service-menu-white").removeClass("init-color");
-        //$(".navbar-header img").addClass("logo-collapse");
+        $(".navbar-header img").addClass("logo-collapse");
     }
 });
 // jQuery to collapse the navbar on scroll
@@ -30,12 +30,12 @@ $(window).scroll(function() {
     if ($(".navbar").offset().top > 90) {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
         $(".navbar-nav").removeClass("init-color");
-        //$(".navbar-header img").removeClass("logo-collapse");
+        $(".navbar-header img").removeClass("logo-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
         //$(".navbar-nav").addClass("init-color");
         $(".navbar-nav.service-menu-white").removeClass("init-color");
-        //$(".navbar-header img").addClass("logo-collapse");
+        $(".navbar-header img").addClass("logo-collapse");
     }
 
 //slide-in code// TODO: CONVERT TO WHILE+SWITCH ----------------------------------------
