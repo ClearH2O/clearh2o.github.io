@@ -82,7 +82,7 @@ a:focus {
 }
 
 .light {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .navbar-custom {
@@ -148,34 +148,6 @@ a:focus {
     color: #337AB7;
 }
 
-@media(min-width:768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .navbar-custom a {
-    
-    background-color: rgba(255,255,255, 0.0);
-}
-
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #fff;
-    }
-
-    .navbar-custom .nav li a:hover {
-    outline: 0;
-    color: #337AB7;
-    background-color: transparent;
-}
-}
 
 .intro {
     display: table;
@@ -221,8 +193,42 @@ a:focus {
     font-size: 18px;
     font-family: 'Roboto',palatino,sans-serif;
 }
+.logo-large {
+        margin-top:0px;
+        font-size:18px;
+}
+.logo-large img{
+    width: 20px;
+    margin-top:-2px;
+}
 
 @media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom a {
+    
+    background-color: rgba(255,255,255, 0.0);
+}
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #fff;
+    }
+
+    .navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #337AB7;
+    background-color: transparent;
+    }
     .intro {
         height: 70%;
         padding: 0;
@@ -577,6 +583,7 @@ body {
         padding-left: 35px;
         padding-right: 35px;
     }
+
 }
 
 @media(min-width:767px) {
@@ -596,6 +603,7 @@ body {
     .subcard-text-sm {
         font-size: 13px;
     }
+
 }
 
 @media(min-width:992px) {
@@ -607,6 +615,14 @@ body {
     }
     .card-2 {
         margin-bottom: 52px;
+    }
+    .logo-large {
+        margin-top:-10px;
+        font-size:28px;
+    }
+    .logo-large img{
+        width: 50px;
+        margin-top:3px;
     }
 }
 
