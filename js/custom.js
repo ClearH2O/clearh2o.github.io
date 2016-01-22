@@ -7,7 +7,7 @@
 $(document).ready(function() {
 
     
-    if ($(".navbar").offset().top > 90) {
+    if ($(".navbar").offset().top > 60) {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
         $(".navbar-nav").removeClass("init-color");
         //$(".navbar-header img").removeClass("logo-collapse");
@@ -27,7 +27,7 @@ $(window).scroll(function() {
     var scrollPos_sect2 = 1650;
     var pre_scrol_post = 1;
 
-    if ($(".navbar").offset().top > 90) {
+    if ($(".navbar").offset().top > 60) {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
         $(".navbar-nav").removeClass("init-color");
         //$(".navbar-header img").removeClass("logo-collapse");
