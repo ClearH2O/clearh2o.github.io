@@ -17,6 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/colorbox.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
@@ -31,6 +32,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/colorbox.js"></script>
 
 </head>
 
@@ -79,9 +83,42 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div style="margin-left:10px" class="col-sm-8 col-md-8 col-sm-offset-4 col-md-offset-4 intro-texts">
+                    <div style="" class="col-xs-8 col-sm-8 col-md-8 col-xs-offset-5 col-sm-offset-5 col-md-offset-5 intro-texts">
                         <h1 class="brand-heading"></h1>
-                        <h3 class="intro-text text-center">{Placeholder  txt for all services and products}</h3>
+                        <h3 class="text-center">Get a Quote Now!</h3>
+                        <div style="" class="col-xs-8 col-sm-8 col-md-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2">
+                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                <div class="form-group">
+                                    <label class = "sr-only" for="inputName2">Name</label>
+                                    <input type = "name" class="form-control" id = "inputName2" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class = "sr-only" for="inputCompany2">Company</label>
+                                    <input type = "company" class="form-control" id = "inputCompany2" placeholder="Company" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class = "sr-only" for="inputAddress2">Address</label>
+                                    <input type = "address" class="form-control" id = "inputAddress2" placeholder="Address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class = "sr-only" for="inputEmail2">Phone</label>
+                                    <input type = "phone" class="form-control" id = "inputPhone2" placeholder="Phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class = "sr-only" for="inputEmail2">Email address</label>
+                                    <input type = "email" class="form-control" id = "inputEmail2" placeholder="Email address" required>
+                                </div>
+                                <div class="form-group ">
+                                    <label class = "sr-only" for="inputComments2">Comments</label>
+                                    <textarea type ="comment" class="form-control" id="inputComments2" placeholder="Comments" aria-describedby="sizing-addon1" required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class ="btn btn-primary btn-block">Submit a Quote</button>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
