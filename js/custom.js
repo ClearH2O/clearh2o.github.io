@@ -71,6 +71,24 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    $('a.btn-series').click( function() {
+        var y_scroll_pos = window.pageYOffset;
+        animateDone = false;
+        if (y_scroll_pos > pre_scrol_post && animateDone == false) {
+            $(".img-trans-out").animate({marginLeft:'150px'},140);
+            $("#img-trans-in-2").addClass("animatedd");
+            animateDone = true;
+        }
+        if (y_scroll_pos > scrollPos_sect2 ) {
+            $("#img-trans-in-2.img-trans-out.animatedd").animate({marginLeft:'0px'},750);
+            $("#img-trans-in-2").removeClass("animatedd");
+        }   
+        else {
+
+        }
+    });
+
 });
 /*$(".img-trans-in").addClass("img-trans-before");
 var animateStatus = false;

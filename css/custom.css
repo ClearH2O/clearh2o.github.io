@@ -824,6 +824,7 @@ body {
 
 .icap {
     border:2px solid #333;
+    margin-bottom: 2px;
 }
 
 .prod-thumb-container {
@@ -906,6 +907,18 @@ body {
         width: 100%;
     }
 
+}
+
+.btn-series {
+    border: 1px solid #42DCA3;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.btn-series:focus {
+    background-color: #ddd;
+    color: #333;
+    border-color: #aaa;
 }
 
 
