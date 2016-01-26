@@ -921,4 +921,8 @@ body {
     border-color: #aaa;
 }
 
-
+.series-active {
+    background-color: #ddd;
+    color: #333;
+    border-color: #aaa;
+}
