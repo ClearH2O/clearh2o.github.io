@@ -899,3 +899,13 @@ body {
 .form-group textarea[type="comment"]{
     height: 100px;
 }
+
+@media(max-width: 578px) {
+    .btn-min-width {
+        white-space: normal;
+        width: 100%;
+    }
+
+}
+
+
