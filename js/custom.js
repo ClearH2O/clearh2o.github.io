@@ -45,6 +45,7 @@ $(window).scroll(function() {
         $(".img-trans-out").animate({marginLeft:'150px'},140);
         $("#img-trans-in-1").addClass("animatedd");
         $("#img-trans-in-2").addClass("animatedd");
+        $("#img-trans-in-3").addClass("animatedd");
         animateDone = true;
     }
 
@@ -56,6 +57,10 @@ $(window).scroll(function() {
     if (y_scroll_pos > scrollPos_sect2 ) {
         $("#img-trans-in-2.img-trans-out.animatedd").animate({marginLeft:'0px'},750);
         $("#img-trans-in-2").removeClass("animatedd");
+    } 
+    if (y_scroll_pos > scrollPos_sect2+250 ) {
+        $("#img-trans-in-3.img-trans-out.animatedd").animate({marginLeft:'0px'},750);
+        $("#img-trans-in-3").removeClass("animatedd");
     }   
     else {
 

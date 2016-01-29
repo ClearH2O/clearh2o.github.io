@@ -915,6 +915,13 @@ body {
     margin-right: 10px;
 }
 
+.btn-series-red {
+    color: #FF7171;
+    border: 1px solid #FF7171;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
 .btn-series:focus {
     background-color: #ddd;
     color: #333;
