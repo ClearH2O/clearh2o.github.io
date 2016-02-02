@@ -358,6 +358,10 @@ a:focus {
         padding: 100px 0;
     }
 
+    .download-section-service-page {
+        padding: 10px 0;
+    }
+
     #map {
         height: 400px;
         margin-top: 250px;
@@ -932,4 +936,8 @@ body {
     background-color: #ddd;
     color: #333;
     border-color: #aaa;
+}
+
+.paragraph-padding {
+    padding: 0 50px;
 }
