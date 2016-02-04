@@ -93,12 +93,27 @@ $(function() {
         $('#img-trans-in-2').attr('src','../img/D16.png');
         $(this).addClass('series-active').siblings().removeClass('series-active');
     });
+    $('#b7').click( function() {
+        $('#img-trans-in-3').attr('src','../img/D16.png');
+        $(this).addClass('series-active').siblings().removeClass('series-active');
+    });
+    $('#b14').click( function() {
+        $('#img-trans-in-3').attr('src','../img/D16.png');
+        $(this).addClass('series-active').siblings().removeClass('series-active');
+    });
 
-    $('a.btn-series').click( function() {
+    $('button.btn-series').click( function() {
         $("#img-trans-in-2.img-trans-out").animate({marginLeft:'150px'},140);
         $("#img-trans-in-2").addClass("animatedd");
         $("#img-trans-in-2.img-trans-out.animatedd").animate({marginLeft:'0px'},750);
         $("#img-trans-in-2").removeClass("animatedd");
+    });
+
+    $('button.btn-series-red').click( function() {
+        $("#img-trans-in-3.img-trans-out").animate({marginLeft:'150px'},140);
+        $("#img-trans-in-3").addClass("animatedd");
+        $("#img-trans-in-3.img-trans-out.animatedd").animate({marginLeft:'0px'},750);
+        $("#img-trans-in-3").removeClass("animatedd");
     });
 
     
