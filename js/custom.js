@@ -17,6 +17,8 @@ $(document).ready(function() {
         $(".navbar-nav.service-menu-white").removeClass("init-color");
         //$(".navbar-header img").addClass("logo-collapse");
     }
+
+
 });
 // jQuery to collapse the navbar on scroll
 var animateDone = false;
@@ -39,7 +41,7 @@ $(window).scroll(function() {
         $(".navbar-nav.service-menu-white").removeClass("init-color");
         //$(".navbar-header img").addClass("logo-collapse");
 
-        $("a.quote-button").fadeOut("slow");
+        $("a.quote-button").fadeOut("fast");
     }
 
 //slide-in code// TODO: CONVERT TO WHILE+SWITCH ----------------------------------------

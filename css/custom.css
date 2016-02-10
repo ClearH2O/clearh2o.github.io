@@ -944,14 +944,20 @@ disp
 
 a.quote-button {
     display: none;
-    width: 100px;
-    height: 60px;
+    padding: 10px 20px;
     position: fixed;
-    z-index: 999;
     right: 20px;
     bottom: 20px;
     background-color: #333;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+}
+
+a.quote-button:hover span {
+    display: none;
+}
+
+a.quote-button:hover:before {
+    content: "  Get a quote now!";
 }
