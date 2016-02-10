@@ -31,15 +31,20 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
         $(".navbar-nav").removeClass("init-color");
         //$(".navbar-header img").removeClass("logo-collapse");
+
+        $("a.quote-button").fadeIn("slow");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
         //$(".navbar-nav").addClass("init-color");
         $(".navbar-nav.service-menu-white").removeClass("init-color");
         //$(".navbar-header img").addClass("logo-collapse");
+
+        $("a.quote-button").fadeOut("slow");
     }
 
 //slide-in code// TODO: CONVERT TO WHILE+SWITCH ----------------------------------------
 //DOM Triggered with page-scroll event -------------------------------------------------
+//ADD another dom for starter. then do the collapsible webform 
 
     if (y_scroll_pos > pre_scrol_post && animateDone == false) {
         $(".img-trans-out").animate({marginLeft:'150px'},140);
