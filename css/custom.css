@@ -954,10 +954,14 @@ a.quote-button {
     border-radius: 30px;
 }
 
-a.quote-button:hover span {
+/*
+a.quote-button:hover  {
     display: none;
 }
 
-a.quote-button:hover:before {
+a.quote-button:hover span:before {
     content: "  Get a quote now!";
-}
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+} */

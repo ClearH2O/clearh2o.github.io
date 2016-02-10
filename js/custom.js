@@ -18,6 +18,13 @@ $(document).ready(function() {
         //$(".navbar-header img").addClass("logo-collapse");
     }
 
+    //quote button animation
+    $("a.quote-button").hover(function() {
+        $(this).find("span").text("  Get Quote Now").animate({queue:false},500);
+    }, function() {
+        $(this).find("span").text("").animate({queue:false},500);
+    });
+
 
 });
 // jQuery to collapse the navbar on scroll
@@ -41,7 +48,7 @@ $(window).scroll(function() {
         $(".navbar-nav.service-menu-white").removeClass("init-color");
         //$(".navbar-header img").addClass("logo-collapse");
 
-        $("a.quote-button").fadeOut("fast");
+        $("a.quote-button").fadeOut("slow");
     }
 
 //slide-in code// TODO: CONVERT TO WHILE+SWITCH ----------------------------------------
