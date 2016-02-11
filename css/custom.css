@@ -943,25 +943,25 @@ disp
 }
 
 a.quote-button {
+    font-family: 'Roboto Slab',palatino,serif;
     display: none;
+    overflow: hidden;
     padding: 10px 20px;
     position: fixed;
     right: 20px;
     bottom: 20px;
-    background-color: #333;
+    background-color: #337ab7;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    border:0.3px solid #fff;
+    
 }
 
-/*
-a.quote-button:hover  {
-    display: none;
+a.quote-button span, a.quote-button i {
+    color: #fff;
 }
 
-a.quote-button:hover span:before {
-    content: "  Get a quote now!";
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-} */
+.popover-title, .popover-content {
+    color: #333;
+}

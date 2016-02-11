@@ -11,22 +11,57 @@ $(document).ready(function() {
         $(".navbar-fixed-top").addClass("top-nav-collapse").addClass("gradient-box");
         $(".navbar-nav").removeClass("init-color");
         //$(".navbar-header img").removeClass("logo-collapse");
+        $("a.quote-button").css("display","inline-block");
+        $("a.quote-button i").addClass("fa-2x");
+
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
         //$(".navbar-nav").addClass("init-color");
         $(".navbar-nav.service-menu-white").removeClass("init-color");
         //$(".navbar-header img").addClass("logo-collapse");
+        $("a.quote-button").css("display","none");
+        
     }
 
     //quote button animation
-    $("a.quote-button").hover(function() {
-        $(this).find("span").text("  Get Quote Now").animate({queue:false},500);
+    $("a#quote-button").on('click', function(e) {e.preventDefault(); return true;}).hover(function() {
+        $(this).animate(
+            {width:"206px"},
+            {
+                duration: 200, 
+                easing:"linear",
+                queue: false,
+                complete:
+                    function() {
+                        $("a#quote-button").find("span").delay(200).queue(function() {
+                            $(this).text("  Get Free Quote Now!");
+                            $("a.quote-button i").removeClass("fa-2x");
+                            $(this).dequeue();
+                        });
+                    }
+            });
     }, function() {
-        $(this).find("span").text("").animate({queue:false},500);
+        $(this).animate(
+            {width:"70px"},
+            {
+                duration: 200, 
+                easing:"linear",
+                queue: false,
+                complete:
+                    function() {
+                        $("a#quote-button").find("span").delay(10).queue(function() {
+                            $(this).text("");
+                            $("a.quote-button i").addClass("fa-2x");
+                            $(this).dequeue();
+                        });
+                    }
+            });
     });
-
-
-});
+    
+    $('[data-toggle="popover"]').popover({content: "This will be the quote content"}); 
+        
+    }); 
+    
 // jQuery to collapse the navbar on scroll
 var animateDone = false;
 $(window).scroll(function() {
@@ -41,14 +76,15 @@ $(window).scroll(function() {
         $(".navbar-nav").removeClass("init-color");
         //$(".navbar-header img").removeClass("logo-collapse");
 
-        $("a.quote-button").fadeIn("slow");
+        $("a.quote-button").css("display","inline-block");
+        $("a.quote-button i").addClass("fa-2x");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse").removeClass("gradient-box");
         //$(".navbar-nav").addClass("init-color");
         $(".navbar-nav.service-menu-white").removeClass("init-color");
         //$(".navbar-header img").addClass("logo-collapse");
 
-        $("a.quote-button").fadeOut("slow");
+        $("a.quote-button").css("display","none");
     }
 
 //slide-in code// TODO: CONVERT TO WHILE+SWITCH ----------------------------------------
