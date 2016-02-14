@@ -438,6 +438,21 @@
         <div class="container text-center" style="margin-top:50px">
             <p style="font-size:10px">Copyright 2016 &copy; ClearH2O Coolers, Lafayette, CO. All Rights Reserved.</p>
         </div>
+
+        <div style="display:none" id="quote-button-content">
+             <form role="form">
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Order:</label>
+                <textarea type="password" class="form-control" id="pwd"> </textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block btn-min-width">Submit</button>
+            </form>
+        </div>
+
     </footer>
 
     <!-- jQuery -->
@@ -454,7 +469,7 @@
     <!-- Custom JavaScript -->
     <script src="js/custom.js"></script>
     <script type="text/javascript">
-        $('body').append('<a href="#" id="quote-button" class="quote-button" title="Popout Quote Box" data-toggle="popover" data-placement="top" ><i class="fa fa-quote-left"></i><span></span></a>');
+        $('body').append('<a href="#" id="quote-button" class="quote-button" title="Popout Quote Box" data-toggle="popover" data-placement="top" data-html="true"><i class="fa fa-quote-left"></i><span></span></a>');
     </script>
 
 </body>

@@ -33,9 +33,9 @@ $(document).ready(function() {
                 queue: false,
                 complete:
                     function() {
-                        $("a#quote-button").find("span").delay(200).queue(function() {
+                        $("a#quote-button").addClass("quote-btn-expand").find("span").delay(200).queue(function() {
                             $(this).text("  Get Free Quote Now!");
-                            $("a.quote-button i").removeClass("fa-2x");
+                            //$("a.quote-button i").removeClass("fa-2x");
                             $(this).dequeue();
                         });
                     }
@@ -49,7 +49,7 @@ $(document).ready(function() {
                 queue: false,
                 complete:
                     function() {
-                        $("a#quote-button").find("span").delay(10).queue(function() {
+                        $("a#quote-button").removeClass("quote-btn-expand").find("span").delay(10).queue(function() {
                             $(this).text("");
                             $("a.quote-button i").addClass("fa-2x");
                             $(this).dequeue();
@@ -58,7 +58,11 @@ $(document).ready(function() {
             });
     });
     
-    $('[data-toggle="popover"]').popover({content: "This will be the quote content"}); 
+    $('[data-toggle="popover"]').popover( { 
+                                            content: function () {
+                                                return $("#quote-button-content").html();
+                                            }
+                                        }); 
         
     }); 
     
@@ -153,16 +157,36 @@ $(function() {
     });
 
     $('button.btn-series').click( function() {
-        $("#img-trans-in-2.img-trans-out").animate({marginLeft:'150px'},140);
+        $("#img-trans-in-2.img-trans-out").animate({marginLeft:'150px'},
+            {
+                duration: 140,
+                //queue: false
+            }
+        );
         $("#img-trans-in-2").addClass("animatedd");
-        $("#img-trans-in-2.img-trans-out.animatedd").animate({marginLeft:'0px'},750);
+        $("#img-trans-in-2.img-trans-out.animatedd").animate({marginLeft:'0px'},
+            {
+                duration: 140,
+                //queue: false
+            }
+        );
         $("#img-trans-in-2").removeClass("animatedd");
     });
 
     $('button.btn-series-red').click( function() {
-        $("#img-trans-in-3.img-trans-out").animate({marginLeft:'150px'},140);
+        $("#img-trans-in-3.img-trans-out").animate({marginLeft:'150px'},
+            {
+                duration: 140,
+                //queue: false
+            }
+        );
         $("#img-trans-in-3").addClass("animatedd");
-        $("#img-trans-in-3.img-trans-out.animatedd").animate({marginLeft:'0px'},750);
+        $("#img-trans-in-3.img-trans-out.animatedd").animate({marginLeft:'0px'},
+            {
+                duration: 140,
+                //queue: false
+            }
+        );
         $("#img-trans-in-3").removeClass("animatedd");
     });
 

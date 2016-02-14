@@ -958,10 +958,22 @@ a.quote-button {
     
 }
 
+a.quote-button:focus {
+    background-color: #1f6098;
+}
+
 a.quote-button span, a.quote-button i {
     color: #fff;
 }
 
+.popover {
+    position: fixed;
+}
+
 .popover-title, .popover-content {
     color: #333;
+}
+
+.quote-btn-expand {
+    padding: 14px 20px;
 }
