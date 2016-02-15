@@ -65,6 +65,17 @@ $(document).ready(function() {
                                         }); 
         
     }); 
+//popover event handling: ESC keypressing hides popover    
+$(document).keyup (function(event) {
+    var keypress = event.which;
+
+    switch (keypress) {
+        case 27 :
+                $("a#quote-button").popover('hide');
+                break;
+        //TODO: ADD MORE CASES TO HANDEL MORE KEYPRESS EVENTS                
+    }
+});
     
 // jQuery to collapse the navbar on scroll
 var animateDone = false;
