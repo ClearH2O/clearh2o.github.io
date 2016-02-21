@@ -204,17 +204,35 @@
         <div class="container text-center" style="margin-top:50px">
             <p style="font-size:10px">Copyright 2016 &copy; ClearH2O Coolers, Lafayette, CO. All Rights Reserved.</p>
         </div>
-         <div style="display:none" id="quote-button-content">
+        <div style="display:none" id="quote-button-content">
              <form role="form">
-              <div class="form-group">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" id="email">
-              </div>
-              <div class="form-group">
-                <label for="pwd">Order:</label>
-                <textarea type="password" class="form-control" id="pwd"> </textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block btn-min-width">Submit</button>
+                <div class="row">
+                    <div class="form-inline quick-quote col-xs-12">
+                        <div class="form-group col-xs-6">
+                            
+                            <input type="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group col-xs-6">
+                            
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-xs-6">
+                            
+                            <input type="phone" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group col-xs-6">
+                            
+                            <input type="address" class="form-control" id="address" placeholder="Address">
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="form-group col-xs-12">
+                           
+                           <textarea type="detail" class="form-control" id="detail" placeholder="Details"> </textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-min-width">Submit</button>
             </form>
         </div>
     </footer>
@@ -235,7 +253,7 @@
     <!-- Custom JavaScript -->
     <script src="js/custom.js"></script>
     <script type="text/javascript">
-        $('body').append('<a href="#" id="quote-button" class="quote-button" title="Popout Quote Box" data-toggle="popover" data-placement="top" data-html="true" ><i class="fa fa-quote-left"></i><span></span></a>');
+        $('body').append('<div id="quick-quote"><a href="#" id="quote-button" class="quote-button" data-toggle="popover" data-placement="top" data-html="true" ><i class="fa fa-quote-left"></i><span></span></a></div>');
     </script>
 
 </body>

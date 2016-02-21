@@ -970,6 +970,21 @@ a.quote-button span, a.quote-button i {
     position: fixed;
 }
 
+#quick-quote .popover {
+    max-width: none;
+    width: 50%;
+
+}
+
+.quick-quote .form-group {
+    margin-bottom: 7px;
+}
+
+.quick-quote .form-group input{
+    width: 100%;
+    right: 0;
+}
+
 .popover-title, .popover-content {
     color: #333;
 }

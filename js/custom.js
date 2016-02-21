@@ -59,9 +59,11 @@ $(document).ready(function() {
     });
     
     $('[data-toggle="popover"]').popover( { 
+
                                             content: function () {
                                                 return $("#quote-button-content").html();
-                                            }
+                                            },
+                                            title: "Quick Quote Now! It's Free!"
                                         }); 
         
     }); 
@@ -73,7 +75,8 @@ $(document).keyup (function(event) {
         case 27 :
                 $("a#quote-button").popover('hide');
                 break;
-        //TODO: ADD MORE CASES TO HANDEL MORE KEYPRESS EVENTS                
+        //TODO: ADD MORE CASES TO HANDEL MORE KEYPRESS EVENTS
+        //case 1: $("a#quote-btn-expand").popover();
     }
 });
     
@@ -142,6 +145,7 @@ $(function() {
         event.preventDefault();
     });
 
+    //This is the button tracker
     $('#d1').click( function() {
         $('#img-trans-in-2').attr('src','../img/D1.png');
         $(this).addClass('series-active').siblings().removeClass('series-active');
@@ -170,18 +174,19 @@ $(function() {
     $('button.btn-series').click( function() {
         $("#img-trans-in-2.img-trans-out").animate({marginLeft:'150px'},
             {
-                duration: 140,
-                //queue: false
+                //queue: false,
+                duration: 140
             }
         );
         $("#img-trans-in-2").addClass("animatedd");
         $("#img-trans-in-2.img-trans-out.animatedd").animate({marginLeft:'0px'},
             {
-                duration: 140,
-                //queue: false
+                //queue: false,
+                duration: 140
+            }, function () {
+                $("#img-trans-in-2").removeClass("animatedd");        
             }
         );
-        $("#img-trans-in-2").removeClass("animatedd");
     });
 
     $('button.btn-series-red').click( function() {
