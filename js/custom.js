@@ -147,15 +147,15 @@ $(function() {
 
     //This is the button tracker
     $('#d1').click( function() {
-        $('#img-trans-in-2').attr('src','../img/D1.png');
+        $('#img-trans-in-2').attr('src','../img/D7B black-front.jpg');
         $(this).addClass('series-active').siblings().removeClass('series-active');
     });
     $('#d7').click( function() {
-        $('#img-trans-in-2').attr('src','../img/D7A.png');
+        $('#img-trans-in-2').attr('src','../img/H2O- 200.png');
         $(this).addClass('series-active').siblings().removeClass('series-active');
     });
     $('#d14').click( function() {
-        $('#img-trans-in-2').attr('src','../img/D14.png');
+        $('#img-trans-in-2').attr('src','../img/D1.png');
         $(this).addClass('series-active').siblings().removeClass('series-active');
     });
     $('#d16').click( function() {
